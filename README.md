@@ -1,4 +1,3 @@
-git clone https://github.com/ayushpathak477/av-perception.git
 ## Real-Time Autonomous Vehicle Perception Pipeline
 This project is a comprehensive perception system designed to interpret complex driving environments for autonomous vehicles. It processes sensor data to detect, track, and predict the behavior of objects in real time, forming a foundational component for autonomous navigation and decision-making.
 
