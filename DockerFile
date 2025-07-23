@@ -1,0 +1,24 @@
+# Dockerfile
+
+# Start from an official Python base image.
+# 'slim' is a lightweight version, perfect for deployment.
+FROM python:3.10-slim
+
+# Set the working directory inside the container.
+# All subsequent commands will run from here.
+WORKDIR /app
+
+# Copy all your project files from your computer into the container's /app directory.
+COPY . .
+
+# Install all the Python libraries listed in your requirements.txt file.
+# --no-cache-dir is an optimization to keep the image size smaller.
+RUN python -m pip install --no-cache-dir -r requirements.txt
+
+# Tell Docker that the container will listen on port 7860 at runtime.
+# This is the port that Gradio uses by default.
+EXPOSE 7860
+
+# The command to run when the container starts.
+# This is the same as running "python app.py" in your terminal.
+CMD ["python", "app.py"]

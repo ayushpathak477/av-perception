@@ -1,0 +1,27 @@
+# Virtual Environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Data files
+data/2011_09_26_drive_0013_sync/
+data/training/
+data/test_video.mp4
+
+# Output files
+output.avi
+output.mp4
+
+# Ultralytics settings
+yolov8n.pt
+
+# Gradio cache
+.gradio/

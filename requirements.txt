@@ -1,0 +1,8 @@
+# requirements.txt
+
+gradio
+torch
+ultralytics
+deep-sort-realtime
+moviepy
+opencv-python-headless
